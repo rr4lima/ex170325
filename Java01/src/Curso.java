@@ -1,4 +1,4 @@
-class Curso extends Escola implements Certificavel {
+class Curso extends Escola {
     private int cargaHoraria;
     
     public Curso(String nome, String endereco, int cargaHoraria) {
@@ -27,10 +27,5 @@ class Curso extends Escola implements Certificavel {
     @Override
     public double calcularMensalidade() {
         return cargaHoraria * 10;
-    }
-    
-    @Override
-    public void emitirCertificado() {
-        System.out.println("Certificado emitido para o curso: " + getNome());
     }
 }

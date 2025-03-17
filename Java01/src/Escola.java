@@ -1,4 +1,3 @@
-
 abstract class Escola {
     private String nome;
     private String endereco;
@@ -25,8 +24,4 @@ abstract class Escola {
     }
 
     public abstract double calcularMensalidade();
-}
-
-interface Certificavel {
-    void emitirCertificado();
 }

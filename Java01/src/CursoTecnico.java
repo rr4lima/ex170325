@@ -28,9 +28,4 @@ class CursoTecnico extends Curso {
     public double calcularMensalidade() {
         return super.calcularMensalidade() * 1.2;
     }
-    
-    @Override
-    public void emitirCertificado() {
-        System.out.println("Certificado técnico emitido para o curso: " + getNome());
-    }
 }
